@@ -21,6 +21,7 @@ namespace BaiTapThucTapWebApplication.Controllers
             return Ok(lmh);
         }
         //ssfsdfsdfsdfsdfsdfsdfsdfsdfsddfsfdsfdsfsdfsdfsdfsdfsdfsdf
+        //hello from the orther side 
         [HttpGet("{id}")]
         public IActionResult GetLMHById(string id)
         {
