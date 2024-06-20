@@ -20,7 +20,7 @@ namespace BaiTapThucTapWebApplication.Controllers
             var lmh = await _context.LOAIMATHANG.ToListAsync();
             return Ok(lmh);
         }
-        //ssfsdfsdfsdfsdfsdfsdfsdfsdfsddfsfdsfd
+        //ssfsdfsdfsdfsdfsdfsdfsdfsdfsddfsfdsfdsfsdfsdfsdfsdfsdfsdf
         [HttpGet("{id}")]
         public IActionResult GetLMHById(string id)
         {
