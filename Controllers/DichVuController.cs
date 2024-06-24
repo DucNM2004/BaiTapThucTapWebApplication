@@ -18,8 +18,7 @@ namespace BaiTapThucTapWebApplication.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DichVu>>> GetAllDichvu()
         {
-            var dichvu = await _context.DICHVU.ToListAsync();
-            return dichvu;
+            return await _context.DICHVU.ToListAsync();
         }
         [HttpGet("{id}")]
         public IActionResult GetDichVuById(string id)
