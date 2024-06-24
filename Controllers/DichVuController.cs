@@ -22,6 +22,7 @@ namespace BaiTapThucTapWebApplication.Controllers
         {
             return await _context.DICHVU.ToListAsync();
         }
+        // adausdfhsdufhasiufasdfsdf
         [HttpGet("{id}")]
         public IActionResult GetDichVuById(string id)
         {
