@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 //hello
+// hello from the orther side
 namespace BaiTapThucTapWebApplication.Controllers
 {
     [Route("api/[controller]")]
