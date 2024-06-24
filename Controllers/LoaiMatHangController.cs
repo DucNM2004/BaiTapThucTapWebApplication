@@ -15,10 +15,13 @@ namespace BaiTapThucTapWebApplication.Controllers
             _context = context;
         }
         [HttpGet]
-        public IActionResult GetAllLoaiMathang() {
-            var dsLoaiMathang = _context.LOAIMATHANG.ToList();
-            return Ok(dsLoaiMathang);
+        public async Task<ActionResult<IEnumerable<LoaiMatHang>>> GetAllLoaimathang()
+        {
+            var lmh = await _context.LOAIMATHANG.ToListAsync();
+            return Ok(lmh);
         }
+        //ssfsdfsdfsdfsdfsdfsdfsdfsdfsddfsfdsfdsfsdfsdfsdfsdfsdfsdf
+        //hello from the orther side 
         [HttpGet("{id}")]
         public IActionResult GetLMHById(string id)
         {
